@@ -54,9 +54,9 @@
 {@render children()}
 
 <footer class="bg-[#141415] px-6 py-12 text-white md:px-16">
-	<div class="flex justify-between px-32">
-		<div class="w-96 space-y-4">
-			<div class="flex items-center">
+	<div class="flex flex-col md:flex-row justify-between gap-8 md:gap-0 px-0 md:px-32">
+		<div class="w-full md:w-96 space-y-4">
+			<div class="flex items-start md:items-center">
 				<Logo data="w-52 h-16" />
 			</div>
 			<p class="text-lg leading-relaxed text-gray-400">
@@ -97,7 +97,8 @@
 	</div>
 
 	<div
-		class="mt-10 flex flex-col items-center justify-between border-t border-gray-700 px-32 pt-6 text-sm text-gray-500 md:flex-row"
+		class="mt-10 flex flex-col items-center justify-between border-t border-gray-700 
+		md:px-32 pt-6 text-sm text-gray-500 md:flex-row"
 	>
 		<p>© Sierra WordPress Theme. All Rights Reserved.</p>
 		<div class="mt-4 flex space-x-6 md:mt-0">
