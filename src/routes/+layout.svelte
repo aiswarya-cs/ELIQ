@@ -12,13 +12,13 @@
   const toggleMenu = () => isOpen = !isOpen;
 </script>
 
-<nav class="fixed top-0 z-50 h-20 w-full bg-[#141415] md:px-20 lg:px-40 pt-2">
+<nav class="fixed top-0 z-50 h-20 w-full bg-[#141415] md:px-20 lg:px-[150px] pt-2">
 	<!-- <div class="flex justify-between"> -->
   <div class="w-full lg:flex h-16 items-center lg:justify-between gap-5">
-    <div class="flex items-center justify-between gap-8 px-5 py-2">
+    <div class="flex items-center justify-between gap-8 px-4 py-2">
       <Logo data="w-40 h-10" />
 
-      <ul class="hidden lg:flex gap-4 text-white">
+      <ul class="hidden lg:flex gap-5 text-white">
         <li class="text-lg font-medium">About</li>
         <li class="text-lg font-medium">Solutions</li>
         <li class="text-lg font-medium">Insights</li>
@@ -53,8 +53,8 @@
 
 {@render children()}
 
-<footer class="bg-[#141415] px-6 py-12 text-white md:px-16">
-	<div class="flex flex-col md:flex-row justify-between gap-8 md:gap-0 px-0 md:px-32">
+<footer class="bg-[#141415] px-6 py-12 text-white lg:px-16">
+	<div class="flex flex-col lg:flex-row justify-between gap-8 md:gap-0 px-0 lg:px-32">
 		<div class="w-full md:w-96 space-y-4">
 			<div class="flex items-start md:items-center">
 				<Logo data="w-52 h-16" />

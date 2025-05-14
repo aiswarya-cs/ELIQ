@@ -153,71 +153,73 @@
 	const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 </script>
 
-<div
-	class="inset-0 min-h-screen w-full bg-[url(images/sierra-saas-gradients.jpg)] bg-cover bg-center bg-no-repeat pb-4 md:pb-24 pt-32"
->
-	<div
-		class="h-auto w-full flex flex-col items-center justify-between gap-5 px-5 md:flex-row md:h-[400px] md:px-36"
-	>
-		<div class="w-full md:w-[60%]">
-			<h1 class="text-[36px] font-semibold leading-tight text-white md:text-[60px]">
-				Web Eliq – Your Digital<br class="hidden md:flex" /> Transformation
-				<span class="text-blue-700"><br />Partner</span>
-			</h1>
-		</div>
+<div class="inset-0 min-h-screen w-full bg-[url(images/sierra-saas-gradients.jpg)] bg-cover bg-center bg-no-repeat pb-10 pt-28 md:pt-32 md:pb-24">
+  <!-- Hero Section -->
+  <div class="w-full flex flex-col items-center justify-between gap-10 px-4 sm:px-6 lg:flex-row lg:px-40">
+    <!-- Left Content -->
+    <div class="w-full lg:w-[60%]">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white">
+        Web Eliq – Your Digital
+        <br class="hidden lg:block" />
+        Transformation <span class="text-blue-700"><br />Partner</span>
+      </h1>
+    </div>
 
-		<div class="mt-5 flex w-full flex-col gap-5 md:mt-0 md:w-[40%]">
-			<p class="text-xl leading-relaxed text-gray-400">
-				Empowering businesses with cutting-edge technology solutions, driving innovation,
-				efficiency, and growth. From software development to cloud solutions, IT infrastructure, and
-				digital services, we provide end-to-end solutions tailored to your needs.
-			</p>
-			<button
-				type="button"
-				class="h-14 w-52 rounded-xl bg-blue-700 text-lg font-medium text-white transition hover:bg-blue-800"
-			>
-				Get started today
-			</button>
-		</div>
-	</div>
+    <!-- Right Content -->
+    <div class="w-full lg:w-[40%] mt-5 lg:mt-0 flex flex-col gap-5">
+      <p class="text-base sm:text-lg leading-relaxed text-gray-300">
+        Empowering businesses with cutting-edge technology solutions, driving innovation,
+        efficiency, and growth. From software development to cloud solutions, IT infrastructure, and
+        digital services, we provide end-to-end solutions tailored to your needs.
+      </p>
+      <button
+        type="button"
+        class="h-12 w-48 rounded-xl bg-blue-700 text-base font-medium text-white transition hover:bg-blue-800"
+      >
+        Get started today
+      </button>
+    </div>
+  </div>
 
-	<div class="mt-5 flex w-full items-center justify-center p-5 md:mt-0 md:p-28">
-		<div class="w-full">
-			<img src="images/dashboard.jpg" alt="" srcset="" class="w-full rounded-xl" />
-		</div>
-	</div>
+  <!-- Image Section -->
+  <div class="mt-10 flex w-full items-center justify-center px-4 sm:px-6 md:py-16 lg:px-36">
+    <div class="w-full max-w-screen-xl">
+      <img
+        src="images/dashboard.jpg"
+        alt="dashboard"
+        class="w-full rounded-xl object-cover"
+      />
+    </div>
+  </div>
 
-	<div class="w-full">
-		<div class="flex flex-col items-center justify-center gap-5 p-2 text-white">
-			<h5 class="pt-5 font-semibold uppercase text-blue-300 md:pt-0">what we do</h5>
-			<h5 class="leading-0 text-center text-[40px] font-semibold leading-tight md:text-[50px]">
-				Supercharge your business
-			</h5>
-			<span class="mb-5 text-center text-lg"
-				>Explore tailored products, innovative solutions, and valuable resources <br
-					class="hidden md:flex"
-				/> designed to accelerate your business growth.</span
-			>
-		</div>
+  <!-- What We Do Section -->
+  <div class="w-full px-4 sm:px-6 md:px-8 lg:px-36 mt-16">
+    <div class="flex flex-col items-center text-center gap-4 text-white">
+      <h5 class="text-blue-300 font-semibold uppercase">what we do</h5>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+        Supercharge your business
+      </h2>
+      <p class="text-base md:text-lg text-gray-300">
+        Explore tailored products, innovative solutions, and valuable resources
+        <br class="hidden md:inline" />
+        designed to accelerate your business growth.
+      </p>
+    </div>
 
-		<div class="flex items-center justify-center m-5 gap-5 md:m-6">
-			<div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-				{#each ProductData as items}
-					<div
-						class="flex w-full md:w-96 flex-col items-start justify-center gap-5 rounded-xl
-						 bg-[#1d1f20] p-10 text-white"
-					>
-						<h1 class="text-3xl font-semibold text-[#ffffff]">{items.heading}</h1>
-						<p class="text-gray-500">{items.paragraph}</p>
-						<button
-							class="h-14 w-52 rounded-xl bg-blue-700 text-lg font-medium text-white hover:border
-               hover:border-blue-700 hover:bg-white hover:text-blue-700">view products</button
-						>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</div>
+    <!-- Product Cards -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {#each ProductData as items}
+        <div class="bg-[#1d1f20] p-8 rounded-xl flex flex-col gap-4 text-white w-full">
+          <h3 class="text-2xl font-semibold">{items.heading}</h3>
+          <p class="text-gray-400">{items.paragraph}</p>
+          <button class="h-12 w-48 rounded-xl bg-blue-700 text-base font-medium hover:bg-white hover:text-blue-700 hover:border hover:border-blue-700">
+            View products
+          </button>
+        </div>
+      {/each}
+    </div>
+  </div>
+
 
 	<!-- <div class="md:mt-32  mt-3 flex w-full items-center justify-center gap-2 p-5 md:p-0 md:gap-20 md:flex">
 		<Logo1 data="opacity-10 hover:opacity-80" />
