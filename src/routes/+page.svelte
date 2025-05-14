@@ -153,7 +153,8 @@
 	const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 </script>
 
-<div class="inset-0 min-h-screen w-full bg-[url(images/sierra-saas-gradients.jpg)] bg-cover bg-center bg-no-repeat pb-10 pt-28 md:pt-32 md:pb-24">
+<div class="inset-0 min-h-screen w-full bg-[url(images/sierra-saas-gradients.jpg)] bg-cover bg-center
+ bg-no-repeat pb-10 pt-28 md:pt-32 md:pb-24">
   <!-- Hero Section -->
   <div class="w-full flex flex-col items-center justify-between gap-10 px-4 sm:px-6 lg:flex-row lg:px-40">
     <!-- Left Content -->
@@ -207,7 +208,7 @@
     </div>
 
     <!-- Product Cards -->
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
       {#each ProductData as items}
         <div class="bg-[#1d1f20] p-8 rounded-xl flex flex-col gap-4 text-white w-full">
           <h3 class="text-2xl font-semibold">{items.heading}</h3>
@@ -221,14 +222,14 @@
   </div>
 
 
-	<!-- <div class="md:mt-32  mt-3 flex w-full items-center justify-center gap-2 p-5 md:p-0 md:gap-20 md:flex">
+	<div class="md:mt-32  mt-3 flex w-full items-center justify-center gap-2 p-5 md:p-0 md:gap-20 md:flex">
 		<Logo1 data="opacity-10 hover:opacity-80" />
 		<Logo5 data="opacity-10 hover:opacity-80" />
 		<Logo3 data="opacity-10 hover:opacity-80" />
 		<Logo4 data="opacity-10 hover:opacity-80" />
 		<Logo2 data="opacity-10 hover:opacity-80" />
 		<Logo6 data="opacity-10 hover:opacity-80" />
-	</div> -->
+	</div>
 </div>
 
 <div class="relative h-[600px] w-full">
@@ -241,7 +242,7 @@
 	<div
 		class="relative z-20 flex h-full flex-col items-center justify-center gap-5 px-4 text-center text-white"
 	>
-		<h1 class="max-w-3xl text-4xl font-bold md:text-4xl">
+		<h1 class="max-w-3xl text-2xl lg:text-4xl font-bold md:text-3xl">
 			Empower your creativity and craft stunning sites while enjoying real–time customer support at
 			every step.
 		</h1>
@@ -269,21 +270,21 @@
 	</div>
 </div>
 
-<!-- <div class="h-auto w-full bg-white">
-	<div class="flex flex-col items-center justify-center px-5 py-10 text-white md:p-20">
+<div class="h-auto w-full bg-white">
+	<div class="flex flex-col items-center justify-center px-5 py-10 text-white md:px-8 md:py-20 lg:p-20">
 		<h5 class="font-semibold uppercase text-blue-700">Products</h5>
 		<h5 class="text-center text-[35px] font-semibold leading-tight text-black md:text-[50px]">
 			Full-cycle software development
 		</h5>
-		<span class="mb-5 mt-3 w-full text-center text-lg text-gray-600 md:w-2/5"
+		<span class="mb-5 mt-3 w-full text-center text-lg text-gray-600 md:px-16 lg:w-2/5"
 			>Empower your creativity and craft stunning sites effortlessly while enjoying real-time
 			customer support at every step.</span
 		>
 
 		<div
-			class="mt-8 flex w-11/12 flex-col items-center justify-center gap-10 text-black md:mx-20 md:flex-row"
+			class="mt-8 flex w-11/12 md:w-full flex-col items-center justify-center gap-10 text-black lg:mx-20 lg:flex-row"
 		>
-			<div class="flex w-full flex-col gap-5 rounded-lg bg-[#fafafc] md:w-1/2 md:p-10">
+			<div class="flex w-full flex-col gap-5 rounded-lg bg-[#fafafc] lg:w-1/2 md:p-5 lg:p-10">
 				<h1 class="text-[28px] font-semibold md:px-3 md:text-3xl">
 					<span class="text-blue-700">Custom software</span> solutions
 				</h1>
@@ -296,7 +297,7 @@
 				</div>
 			</div>
 
-			<div class="flex w-full flex-col gap-5 rounded-lg bg-[#fafafc] md:w-1/2 md:p-10">
+			<div class="flex w-full flex-col gap-5 rounded-lg bg-[#fafafc] lg:w-1/2 md:p-5 lg:p-10">
 				<h1 class="text-[28px] font-semibold md:px-3 md:text-3xl">
 					AI-driven <span class="text-blue-700"> marketing tools</span>
 				</h1>
@@ -310,64 +311,61 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
-<!-- <div class="h-auto w-full bg-[#fafafc]">
-	<div class="flex flex-col items-center justify-center p-5 text-white md:p-20">
-		<div class="flex flex-col items-center justify-center p-2 md:p-0">
-			<h5 class="font-semibold uppercase text-blue-700">Solutions</h5>
-			<h5 class="text-center text-[32px] font-semibold leading-tight text-black md:text-[50px]">
-				Every feature you need,<br class="hidden md:flex" /> all in a single system
-			</h5>
-			<span class="mb-5 mt-3 w-full text-center text-lg text-gray-600"
-				>Explore a spectrum of solutions meticulously designed to <br class="hidden md:flex" /> empower
-				your business growth.</span
-			>
-		</div>
+<div class="w-full bg-[#fafafc]">
+  <div class="flex flex-col items-center justify-center px-4 py-8 lg:px-20 lg:py-20">
+    <div class="flex flex-col items-center text-center px-2 md:px-0">
+      <h5 class="font-semibold uppercase text-blue-700">Solutions</h5>
+      <h5 class="text-[28px] font-semibold leading-tight text-black sm:text-[36px] md:text-[44px] lg:text-[50px]">
+        Every feature you need,<br class="hidden md:block" />
+        all in a single system
+      </h5>
+      <span class="mt-3 mb-5 text-base text-gray-600 sm:text-lg">
+        Explore a spectrum of solutions meticulously designed to <br class="hidden md:block" />
+        empower your business growth.
+      </span>
+    </div>
 
-		<div class="flex flex-col items-center justify-center p-5 text-white md:p-20">
-			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-				{#each solutionData as items}
-					<div
-						class="flex h-full min-h-[320px] w-full flex-col justify-between rounded-md bg-white
-						 p-5 text-black md:w-96 md:p-8"
-					>
-						<img src={items.image} alt="" class="h-8 w-8" />
-						<div class="mt-5 flex flex-grow flex-col justify-between">
-							<div class="flex flex-grow flex-col gap-5">
-								<h1 class="text-2xl font-semibold">{items.head}</h1>
-								<p class="text-[17px] text-[#5b5b5c]">{items.description}</p>
-							</div>
-							<button
-								class="mt-5 h-10 w-40 rounded-lg bg-[#fafafc] p-2 text-base font-medium text-blue-700"
-							>
-								{items.buttonText}
-							</button>
-						</div>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</div>
-</div> -->
+    <div class="w-full px-4 py-8 sm:px-6 md:px-10 lg:px-20">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 2xl:grid-cols-3">
+        {#each solutionData as items}
+          <div class="flex flex-col h-full min-h-[320px] w-full rounded-md bg-white p-6 text-black">
+            <img src={items.image} alt="" class="h-8 w-8" />
+            <div class="mt-5 flex flex-grow flex-col justify-between">
+              <div class="flex flex-col gap-4">
+                <h1 class="text-xl sm:text-2xl font-semibold">{items.head}</h1>
+                <p class="text-[15px] sm:text-[17px] text-[#5b5b5c]">{items.description}</p>
+              </div>
+              <button class="mt-5 h-10 w-full sm:w-40 rounded-lg bg-[#fafafc] p-2 text-base font-medium text-blue-700">
+                {items.buttonText}
+              </button>
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="h-auto bg-[#141415] py-10 text-white">
 	<div class="flex w-full flex-col items-center justify-center">
-		<!-- <div class="flex flex-col items-center justify-center gap-2 p-5 text-white md:p-20">
+		<div class="flex flex-col items-center justify-center gap-2 p-5 text-white md:py-20 md:px-8 lg:p-20">
 			<h5 class="font-semibold uppercase text-blue-700">Why Choose Us?</h5>
 			<h5 class="text-center text-[30px] font-semibold leading-tight md:text-[50px]">
 				Automate it all, and save hours
 			</h5>
-			<span class="mb-5 mt-3 w-full px-4 text-center text-lg text-gray-400 md:w-2/5"
+			<span class="mb-5 mt-3 w-full px-4 text-center text-lg text-gray-400 lg:w-2/5"
 				>We bring together everything that’s required to build software. <br
 					class="hidden md:flex"
 				/> Reach more customers, save time and money, and boost sales.
 			</span>
 
 			<div
-				class="mt-8 flex flex-col items-center justify-center gap-10 text-white md:mx-20 md:flex-row md:w-11/12"
+				class="mt-8 flex flex-col items-center justify-center gap-10 text-white md:mx-20 lg:flex-row md:w-11/12"
 			>
-				<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 md:w-1/2 md:p-10">
+				<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 lg:w-1/2 lg:p-10">
 					<h1 class="px-3 text-3xl font-semibold">
 						Cloud computing <span class="text-blue-700"> infrastructure</span>
 					</h1>
@@ -376,11 +374,11 @@
 						levels, reduces service outages and improve the customer experience.
 					</p>
 					<div class="my-6 flex items-center justify-center">
-						<img src="images/sierra-saas-1.jpg" alt="" class="rounded-lg" />
+						<img src="images/sierra-saas-1.jpg" alt="" class="rounded-lg md:w-11/12" />
 					</div>
 				</div>
 
-				<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 md:w-1/2 md:p-10">
+				<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 lg:w-1/2 lg:p-10">
 					<h1 class="px-3 text-3xl font-semibold">
 						<span class="text-blue-700">Performance and</span> optimization
 					</h1>
@@ -389,18 +387,18 @@
 						results. Empower your brand with intelligent marketing strategies.
 					</p>
 					<div class="my-6 flex items-center justify-center">
-						<img src="images/sierra-saas-2.jpg" alt="" class="rounded-lg" />
+						<img src="images/sierra-saas-2.jpg" alt="" class="rounded-lg w-11/12" />
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="h-[2px] w-4/5 bg-[#282b2c]"></div>
-<!-- 
+
 		<div class="flex items-center justify-center py-5 md:py-20">
-			<div class="mx-5 grid grid-cols-1 gap-5 md:mx-20 md:grid-cols-2 lg:grid-cols-4">
+			<div class="mx-5 grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-4">
 				{#each whatDo as item}
-					<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 md:w-72 md:p-14">
+					<div class="flex w-full flex-col gap-5 rounded-lg bg-[#1d1f20] p-5 lg:w-72 md:p-14">
 						<h1 class="text-2xl font-medium">
 							{item.text} <br class="hidden md:flex" />
 							<span class="text-blue-700">{item.colored}</span>
@@ -414,10 +412,10 @@
 		<div class="h-[2px] w-4/5 bg-[#282b2c] mt-5 md:mt-0"></div>
 
 		<div
-			class="mx-auto flex flex-col md:flex-row h-auto md:min-h-screen w-full items-center
-			 justify-center bg-[#141415] p-5 py-10 md:py-0 text-white md:w-11/12 md:px-20"
+			class="mx-auto flex flex-col lg:flex-row md:gap-8 lg:gap-0 h-auto lg:min-h-screen w-full items-center
+			 justify-center bg-[#141415] p-5 py-10 md:py-10 text-white lg:w-11/12 md:px-20"
 		>
-			<div class="w-full space-y-6 md:w-1/2">
+			<div class="w-full space-y-6 lg:w-1/2">
 				<h5 class="font-medium uppercase text-blue-700">FAQs</h5>
 				<h1 class="text-[35px] md:text-[50px] font-bold leading-tight">
 					Got a question?<br class="hidden md:flex" /> Get your answer
@@ -428,7 +426,7 @@
 				</p>
 			</div>
 
-			<div class="w-full mt-5 md:mt-0 md:w-1/2 space-y-6 rounded-xl bg-[#1d1f20] p-6">
+			<div class="w-full mt-5 md:mt-0 lg:w-1/2 space-y-6 rounded-xl bg-[#1d1f20] p-6">
 				<div class="space-y-4">
 					{#each faqData as faq}
 						<Accordion.Root>
@@ -440,12 +438,12 @@
 					{/each}
 				</div>
 			</div>
-		</div> -->
+		</div>
 
-		<!-- <div
+		<div
 			class="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg"
 		>
-			<BgLines data="absolute bg-blue-600 bg-contain bg-center bg-repeat rounded-lg w-full md:w-4/5 py-20 h-auto" />
+			<BgLines data="absolute bg-blue-600 bg-contain bg-center bg-repeat rounded-lg w-full lg:w-4/5 py-20 h-auto" />
 
 			<div class="relative z-10 flex flex-col items-center justify-center px-4 py-20 text-center">
 				<h1 class="mb-4 text-3xl font-bold text-white md:text-5xl">
@@ -468,6 +466,6 @@
 					</button>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </div>

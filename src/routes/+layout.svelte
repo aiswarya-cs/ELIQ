@@ -14,23 +14,23 @@
 
 <nav class="fixed top-0 z-50 h-20 w-full bg-[#141415] md:px-20 lg:px-[150px] pt-2">
 	<!-- <div class="flex justify-between"> -->
-  <div class="w-full lg:flex h-16 items-center lg:justify-between gap-5">
+  <div class="w-full 2xl:flex h-16 items-center lg:justify-between gap-5">
     <div class="flex items-center justify-between gap-8 px-4 py-2">
       <Logo data="w-40 h-10" />
 
-      <ul class="hidden lg:flex gap-5 text-white">
+      <ul class="hidden 2xl:flex gap-5 text-white">
         <li class="text-lg font-medium">About</li>
         <li class="text-lg font-medium">Solutions</li>
         <li class="text-lg font-medium">Insights</li>
         <li class="text-lg font-medium">Contact</li>
       </ul>
 
-      <button class="lg:hidden" onclick={toggleMenu} aria-label="Toggle menu">
+      <button class="2xl:hidden" onclick={toggleMenu} aria-label="Toggle menu">
         <Menu data="w-8 h-8 fill-[#ffffff]" />
       </button>
     </div>
 
-    <div class="hidden lg:flex items-center gap-5">
+    <div class="hidden 2xl:flex items-center gap-5">
       <button class="h-12 w-36 rounded-xl bg-gray-700 text-lg font-medium text-white">
         We're hiring
       </button>
@@ -41,7 +41,7 @@
   </div>
 
   {#if isOpen}
-    <ul class="flex flex-col w-full gap-5 bg-[#141415] p-5 text-white lg:hidden mt-2">
+    <ul class="flex flex-col w-full gap-5 bg-[#141415] p-5 text-white 2xl:hidden mt-2">
       <li class="text-lg font-medium">About</li>
       <li class="text-lg font-medium">Solutions</li>
       <li class="text-lg font-medium">Insights</li>
